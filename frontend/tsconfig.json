@@ -1,0 +1,20 @@
+{
+    "compilerOptions": {
+      "jsx": "react",
+      "target": "es2020",
+      "module": "commonjs",
+      "outDir": "build",
+      "strict": true,
+      "alwaysStrict": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "noImplicitReturns": true,
+      "noUnusedLocals": true,
+      "noUnusedParameters": true,
+      "noImplicitAny": true,
+      "noImplicitThis": true,
+      "strictNullChecks": true
+    },
+    "include": ["src/", "webpack.config.js"],
+    "compileOnSave": true
+  }

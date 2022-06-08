@@ -1,0 +1,36 @@
+services:
+  frontend:
+    command: npm run start
+    build: ./frontend
+    ports:
+      - 8080:8080
+    volumes:
+      - ./frontend/public:/site/public
+      - ./frontend/src:/site/src
+      - ./.env:/site/.env
+  backend:
+    command: npm run start
+    build: ./backend
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend/src:/site/src
+      - ./.env:/site/.env
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: mysql:latest
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: localdevpass
+      MYSQL_DATABASE: revolution
+    volumes:
+      - ./data:/var/lib/mysql
+    ports:
+      - 3306:3306
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 12s
+      timeout: 15s
+      retries: 10

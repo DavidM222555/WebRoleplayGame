@@ -1,0 +1,55 @@
+
+.standard-button {
+    width: 40%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+}
+
+.title-format {
+    font-size:90px;
+    text-align: center;
+    font-family:  "Rockwell",Arial, sans-serif;
+}
+
+.center {
+    text-align: center;
+}
+
+.linkStyle {
+    color: rgb(0, 0, 0);
+    display:block;
+    text-align:center;
+    font-family:  "Rockwell",Arial, sans-serif;
+}
+.button-text {
+    font-size:35px;
+    text-align: center;
+    font-family:  "Rockwell",Arial, sans-serif;
+    
+
+}
+.customButton {
+    display: block;
+
+    text-align: center;
+    border-style: solid;
+    font-size:30px;
+}
+
+.centerDiv {
+    color: rgb(0, 0, 0);
+    margin: auto;
+    font-family:  "Rockwell",Arial, sans-serif;
+    display:block;
+    text-align:center;
+    
+}
+
+.backgroundColor {
+    color: rgb(38, 88, 92);
+    background-color: blue;
+    background:rgb(38, 88, 92);
+}

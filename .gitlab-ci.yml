@@ -1,0 +1,23 @@
+stages:
+  - make
+
+kill-old:
+  stage: make
+  only:
+    - master
+  script:
+    - screen -X -S roleplay_server quit
+  allow_failure: true
+
+build-deploy:
+  stage: make
+  only:
+    - master
+  script:
+    - npm i
+    - npm run build
+    - screen -dmS roleplay_server npm run server
+  environment:
+    name: Cool Roleplay Game Server
+    url: http://64.251.150.245:8080/
+  needs: [kill-old]

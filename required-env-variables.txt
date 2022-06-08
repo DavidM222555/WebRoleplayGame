@@ -1,0 +1,5 @@
+DB : string
+DB_PASS : string
+DB_USER : string
+PORT : number
+WEBSOCKET_URL : string

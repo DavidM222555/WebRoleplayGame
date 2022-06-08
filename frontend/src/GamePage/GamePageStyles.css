@@ -1,0 +1,29 @@
+@font-face {
+    font-family: PrinceValiant;
+    src: url('../Assets/Fonts/PrinceValiant.ttf');
+}
+
+.border {
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+.unrounded-border {
+    border: black;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.chat-textarea {
+    resize: none;
+    width: 98.5%;
+    height: 75%;
+    margin-left: .3%
+}
+
+.chat-submit-button {
+    width: 98%;
+    height: 100%
+}

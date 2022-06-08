@@ -1,0 +1,13 @@
+.myButton {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+}
+
+.title-format {
+    font:larger;
+    text-align: center;
+}

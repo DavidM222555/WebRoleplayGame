@@ -1,0 +1,48 @@
+.standard-button {
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    display: flex;
+    display: grid;
+}
+
+.title-format {
+    font:larger;
+    text-align: center;
+}
+
+
+.customButton {
+    display: block;
+    
+    width: 80%;
+    height: 100%;
+    text-align: center;
+    
+    display: flex;
+    display: grid;
+    -webkit-appearance: button;
+    -webkit-writing-mode: horizontal-tb !important;
+    text-rendering: auto;
+    color: buttontext;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: center;
+    align-items: center;
+    cursor: default;
+    background-color: buttonface;
+    box-sizing: border-box;
+    margin: 0em;
+    font: 400 11px system-ui;
+    padding: 1px 7px 2px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(100, 255, 170) rgb(100, 255, 170) rgb(100, 255, 170);
+    border-image: initial;
+    transform: translateX(12%);
+}
